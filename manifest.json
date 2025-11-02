@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "XPathy",
+  "version": "3.0.0",
+  "description": "Convert XPathy (Java) snippets into XPath and highlight matching elements in Chrome.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["http://localhost:5055/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/logo.png",
+      "48": "icons/logo.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "devtools_page": "devtools.html"
+}

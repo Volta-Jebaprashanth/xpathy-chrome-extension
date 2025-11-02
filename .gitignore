@@ -1,0 +1,69 @@
+# ========================================
+# 🌐 Chrome Extension .gitignore
+# ========================================
+
+# --- Node / Package Management ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.pnpm-debug.log*
+
+# --- Build & Dist Output ---
+dist/
+build/
+out/
+coverage/
+*.zip
+
+# --- TypeScript & Transpilation ---
+*.tsbuildinfo
+*.map
+
+# --- IDE / Editor Configs ---
+.vscode/
+.idea/
+*.iml
+
+# --- OS & Misc ---
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+
+# --- Env & Secrets ---
+.env
+.env.local
+.env.*.local
+secrets.json
+config.json
+
+# --- Test Artifacts ---
+test-output/
+reports/
+*.spec.js
+*.spec.ts
+
+# --- Logs ---
+logs/
+*.log
+*.log.*
+
+# --- Temporary Files ---
+tmp/
+temp/
+.cache/
+*.bak
+*.tmp
+
+# --- Screenshots / Debug Captures ---
+screenshots/
+recordings/
+
+# ========================================
+# 🚀 Releases - Keep versioned JARs if any
+# ========================================
+# Keep all release JARs versioned in Git
+!releases/
